@@ -13,6 +13,6 @@ exports.read = async (req,res) => {
 
     if (!txt) return res.status(404).json({success:false,message:'Not found'});
 
-    return res.status(200).json({success:true,message:'Fetched successfully',texts:txt.text});
+    return res.status(200).json({success:true,message:'Fetched successfully',texts:txt.text,lang:txt.lang});
 
 }
