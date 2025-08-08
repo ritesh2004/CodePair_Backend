@@ -27,7 +27,7 @@ const languageConfig = {
     java: {
         extension: 'java',
         dockerFile: 'java.dockerfile',
-        filename: 'main.java',
+        filename: 'Main.java',
     }
 };
 
