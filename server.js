@@ -3,8 +3,8 @@ var connectDB = require('./DB/database');
 
 connectDB();
 
-httpServer.listen(4000, () => {
-    console.log("Server is working");
+httpServer.listen(process.env.PORT, () => {
+    console.log(`Server is working on port ${process.env.PORT}`);
 });
 
 module.exports = httpServer;

@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "pm2 start server.js --name codepair-server --watch --ignore-watch=\"node_modules\""
   },
   "author": "Ritesh Pramanik",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "express": "^4.18.3",
     "mongoose": "^8.2.1",
     "nodemon": "^3.1.0",
+    "pm2": "^6.0.8",
     "socket.io": "^4.7.5",
     "uuid": "^9.0.1"
   }
